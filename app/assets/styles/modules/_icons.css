@@ -1,0 +1,22 @@
+.icon{
+	margin-top: 3rem;
+	width: 3.25rem;
+	height: 3.25rem;
+	background: #191D22;
+	display: inline-block;
+	border-radius: 100%;
+
+	&--apple{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 25%;
+
+	}
+
+	&--android{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 25%;
+	}
+	
+}

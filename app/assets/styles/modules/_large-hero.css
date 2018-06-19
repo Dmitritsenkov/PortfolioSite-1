@@ -1,0 +1,34 @@
+.large-hero{
+	position: relative;
+
+	&__text-content{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 41.875rem;
+		transform: translateY(-50%);
+	}
+
+	&__title{
+		font-weight: 300;
+		color: #FFF;
+		font-size: 3rem;
+		margin: 0;
+	}
+
+	&__description{
+		color: #FFF;
+		font-size: 1.125rem;
+		font-weight: 100;
+		max-width: 42rem;
+		margin-left: auto;
+		margin-bottom: 1.625rem;
+	}
+
+	&__avaliable{
+		position: relative;
+		bottom: .4rem;
+		margin-right: 1rem;
+	}
+
+}
