@@ -1,9 +1,8 @@
 .wrapper{
-	overflow: hidden;
-	padding-left: 29px;
-	padding-right: 29px;
-	max-width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
+/*	padding-right: 25px;
+	padding-left: 25px;*/
 
+	@mixin atLarge{
+	/*	width: 100%;*/
+	}
 }

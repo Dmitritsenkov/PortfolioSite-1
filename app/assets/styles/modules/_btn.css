@@ -1,19 +1,39 @@
 .btn{
-	background-color: $mainBlue;
 	color: #FFF;
 	text-decoration: none;
-	padding: 1.2rem 3rem;
 	display: inline-block;
-	box-shadow: 0 4px 0 rgba(39,118,151);
 	border-radius: 5px;
-	margin-right: 2.375rem;
 	text-transform: uppercase;
 	font-weight: 600;
 
+
+
+	&--learnMore{
+		
+	background-color: $mainBlue;
+	box-shadow: 0 4px 0 rgba(39,118,151);
+	padding: .8rem 1.8rem;
+	white-space: nowrap;
+	
+	@mixin atMedium{
+		padding: 1.1rem 3rem;
+		margin-left: 0;
+	}
+
+	}
+
 	&--download{
 		background-color: transparent;
-		padding: 1.2rem 3rem 1.4rem 3rem;
+		padding: 0.8rem 1.9rem 1rem 2rem;
 		background-color: none;
 		box-shadow:0px 0px 0px 2px white inset;
+		margin-bottom: 1rem;
+
+		@mixin atMedium{
+			padding: 1.2rem 3rem 1.4rem 3rem;
+			margin-left: 0;
+			margin-right: 2.375rem;
+
+		}
 	}
 }

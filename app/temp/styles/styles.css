@@ -348,96 +348,255 @@ body{
 
 img{
 	max-width: 100%;
+	display: block;
 	height: auto;
 }
 
 .large-hero{
-	position: relative;
+		position: relative;
+		border-bottom-width: 4px;
+    	border-bottom-style: solid; 
+    	border-bottom-color: #4BCAFF;
+    	vertical-align: middle;	
+
 
 }
 
 .large-hero__text-content{
+		top: 3%;
 		position: absolute;
-		top: 50%;
-		left: 0;
-		width: 41.875rem;
-		-webkit-transform: translateY(-50%);
-		        transform: translateY(-50%);
+		width: 70%;
+		text-align: center;
+		margin-left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		height: 400px;
+
+	}
+
+@media (min-width: 530px){
+
+.large-hero__text-content{
+			top: 15%
+
+	}
+	}
+
+@media (min-width: 800px){
+
+.large-hero__text-content{
+			top: 20%;
+			position: absolute;
+			width: 70%;
+			margin-left: 50%;
+			-webkit-transform: translateX(-50%);
+			        transform: translateX(-50%)
+
+	}
+	}
+
+@media (min-width: 1200px){
+
+.large-hero__text-content{
+			text-align: left;
+			top: 25%;
+			position: absolute;
+			width: 45%;
+			margin-left: 45%;
+			margin-right: 10%;
+			-webkit-transform: none;
+			        transform: none
+
+	}
 	}
 
 .large-hero__title{
-		font-weight: 300;
+		font-weight: 100;
 		color: #FFF;
-		font-size: 3rem;
+		font-size: 1.5rem;
 		margin: 0;
+	}
+
+@media (min-width: 530px){
+
+.large-hero__title{
+			font-size: 1.9rem
+	}
+	}
+
+@media (min-width: 800px){
+
+.large-hero__title{
+			font-size: 2.4rem
+	}
 	}
 
 .large-hero__description{
 		color: #FFF;
-		font-size: 1.125rem;
+		font-size: 1rem;
 		font-weight: 100;
-		max-width: 42rem;
 		margin-left: auto;
 		margin-bottom: 1.625rem;
 	}
 
-.large-hero__avaliable{
-		position: relative;
-		bottom: .4rem;
-		margin-right: 1rem;
+@media (min-width: 530px){
+
+.large-hero__description{
+			font-size: 1.125rem
+	}
 	}
 
-.wrapper{
-	overflow: hidden;
-	padding-left: 29px;
-	padding-right: 29px;
-	max-width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
+.large-hero__avaliable{
+		position: relative;
+		bottom: 1.2rem;
+		margin-right: .8rem;
+		color: #FFF;
+	}
+
+.large-hero__arm{
+		
+		display: none;
 
 }
 
+@media (min-width: 1200px){
+
+.large-hero__arm{
+		position: absolute;
+		left: -1%;
+		top: 100%;
+		display: block;
+		max-width: 540px;
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%)
+
+}
+	}
+
+@media all and (min-width: 1350px) {
+
+.large-hero__arm{
+		max-width: 620px
+
+}
+}
+
+@media all and (min-width: 1450px) {
+
+.large-hero__arm{
+		max-width: 680px
+
+}
+}
+
 .btn{
-	background-color: #4BCAFF;
 	color: #FFF;
 	text-decoration: none;
-	padding: 1.2rem 3rem;
 	display: inline-block;
-	box-shadow: 0 4px 0 rgba(39,118,151);
 	border-radius: 5px;
-	margin-right: 2.375rem;
 	text-transform: uppercase;
 	font-weight: 600;
 }
 
+.btn--learnMore{
+		
+	background-color: #4BCAFF;
+	box-shadow: 0 4px 0 rgba(39,118,151);
+	padding: .8rem 1.8rem;
+	white-space: nowrap;
+
+	}
+
+@media (min-width: 800px){
+
+.btn--learnMore{
+		padding: 1.1rem 3rem;
+		margin-left: 0
+
+	}
+	}
+
 .btn--download{
 		background-color: transparent;
-		padding: 1.2rem 3rem 1.4rem 3rem;
+		padding: 0.8rem 1.9rem 1rem 2rem;
 		background-color: none;
 		box-shadow:0px 0px 0px 2px white inset;
+		margin-bottom: 1rem;
+	}
+
+@media (min-width: 800px){
+
+.btn--download{
+			padding: 1.2rem 3rem 1.4rem 3rem;
+			margin-left: 0;
+			margin-right: 2.375rem
+	}
+	}
+
+/*	padding-right: 25px;
+	padding-left: 25px;*/
+
+@media (min-width: 1200px){
+
+.wrapper{
+	/*	width: 100%;*/
+}
 	}
 
 .icon{
-	margin-top: 3rem;
-	width: 3.25rem;
-	height: 3.25rem;
+	margin-top: .9rem;
+	width: 2.25rem;
+	height: 2.25rem;
 	background: #191D22;
 	display: inline-block;
 	border-radius: 100%;
 	
 }
 
+@media (min-width: 530px){
+
+.icon{
+	width: 3.25rem;
+	height: 3.25rem
+	
+}
+	}
+
 .icon--apple{
 	margin-left: 50%;
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
-	margin-top: 25%;
+	margin-top: 23%;
+	width: 40%;
 
+	}
+
+@media (min-width: 530px){
+
+.icon--apple{
+		width: auto;
+		height: auto
+
+	}
 	}
 
 .icon--android{
 	margin-left: 50%;
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
-	margin-top: 25%;
+	margin-top: 18%;
+	width: 55%;
+
+
+	}
+
+@media (min-width: 530px){
+
+.icon--android{
+		width: auto;
+		height: auto;
+		margin-top: 25%
+
+
+	}
 	}
