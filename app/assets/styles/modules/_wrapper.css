@@ -1,8 +1,10 @@
-.wrapper{
-/*	padding-right: 25px;
-	padding-left: 25px;*/
+/*.wrapper{
+	padding-right: 25px;
+	padding-left: 25px;
 
 	@mixin atLarge{
-	/*	width: 100%;*/
+	width: 100%;
+	padding-right: 140px; 
+	padding-left: 140px;
 	}
-}
+}*/

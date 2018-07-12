@@ -1,0 +1,16 @@
+.circle{
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	border: solid 3px #EFEFEF;
+	margin: auto;
+
+&--blue{
+	background: #4BCAFF;
+}
+
+&--black{
+	background: #414042;
+}
+
+}

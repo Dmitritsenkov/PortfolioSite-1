@@ -35,8 +35,26 @@
 		height: auto;
 		margin-top: 25%;
 	}
+}
+}
 
-
-	}
-	
+#icon1{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 27.5%;
+}
+#icon2{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 27.5%;
+}
+#icon3{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 27.5%;
+}
+#icon4{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 30%;
 }
