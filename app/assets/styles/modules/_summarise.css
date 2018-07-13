@@ -1,6 +1,7 @@
 .summarise{
 
 	background-color: #F9F9F9;
+	border-bottom: 1px solid #E7E7E7;
 
 	&__title{
 	text-transform: uppercase;
@@ -8,11 +9,7 @@
 	color: #414042;
 	}
 
-	&__description{
-		max-width: 75%;
-		margin: auto;
-		font-size: .9rem;
-	}
+
 }
 
 
