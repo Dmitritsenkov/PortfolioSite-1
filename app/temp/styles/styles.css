@@ -352,6 +352,14 @@ img{
 	height: auto;
 }
 
+.clearfix:after{
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
 .circle{
 	width: 10rem;
 	height: 10rem;
@@ -512,6 +520,7 @@ img{
 	border-radius: 5px;
 	text-transform: uppercase;
 	font-weight: 600;
+
 }
 
 .btn--learnMore{
@@ -564,16 +573,44 @@ img{
 	}
 	}
 
-/*.wrapper{
+.btn--purchase{
+		width: 10rem;
+		height: 3rem;
+		color: #FFF;
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		
+	
+}
+
+.btn--green{
+		background: #91C46B;
+	}
+
+.btn--blue{
+		background-color: #4BCAFF;
+	}
+
+.btn--orange{
+		background-color: #FD7C00;
+	}
+
+.wrapper{
 	padding-right: 25px;
 	padding-left: 25px;
+}
 
-	@mixin atLarge{
+@media (min-width: 1200px){
+
+.wrapper{
 	width: 100%;
 	padding-right: 140px; 
-	padding-left: 140px;
+	padding-left: 140px
+}
 	}
-}*/
 
 .icon{
 	margin-top: .9rem;
@@ -686,7 +723,6 @@ img{
 	padding-left: 5%;
 	padding-right: 5%;
 
-
 }
 
 .row__3{
@@ -701,7 +737,6 @@ img{
 
 .row__3{
 			float: left;
-			text-align: center;
 			width: 50%
 	}
 	}
@@ -709,8 +744,7 @@ img{
 @media (min-width: 800px){
 
 .row__3{
-		width: 25%;
-		text-align: center
+		width: 25%
 	}
 	}
 
@@ -760,3 +794,205 @@ img{
 	width: 270px;
 	height: 190px;
 }
+
+.videoSection{
+
+		position: relative;
+		background-color: #F2CA8A;
+}
+
+.videoSection__title{
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		font-size: 1.3rem;
+		font-weight: 100;
+		width: 100%;
+		text-align: center;
+
+	}
+
+@media (min-width: 800px){
+
+.videoSection__title{
+		top: 50%;
+		font-size: 2rem
+
+	}
+	}
+
+.videoSection__description{
+		display: none;	
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		text-align: center;
+		max-width: 46rem;
+		display: none;
+	}
+
+@media (min-width: 800px){
+
+.videoSection__description{
+			display: block
+	}
+	}
+
+.videoSection__video1{
+	  height: 550px;
+	  width: 100%;
+	}
+
+.packages{
+	display: inline-block;
+	width: 100%;
+	padding-right: 5%;
+	padding-left: 5%;
+
+	}
+
+@media (min-width: 800px){
+
+.packages{
+	padding-right: 8%;
+	padding-left: 8%
+
+	}
+	}
+
+@media (min-width: 1200px){
+
+.packages{
+	padding-right: 15.5%;
+	padding-left: 15.5%
+
+	}
+	}
+
+.package{
+
+	height: 20rem;
+	width: 90%;
+	border: #DAD7D7 solid 1px;
+	background: #F9F9F9;
+	margin-bottom: 1.3rem;
+
+	}
+
+@media (min-width: 800px){
+
+.package{
+	margin-bottom: 0;
+	height: 20rem;
+	width: 25%;
+	margin-right: 2%;
+	float: left
+
+	}
+	}
+
+@media (min-width: 1200px){
+
+.package{
+		width: 20%;
+		height: 23.5rem
+
+	}
+	}
+
+.package--larger{
+		height: 20rem;
+		width: 90%;
+
+	}
+
+@media (min-width: 800px){
+
+.package--larger{
+		height: 23rem;
+		width: 30%
+
+	}
+	}
+
+@media (min-width: 1200px){
+
+.package--larger{
+		width: 25%;
+		height: 25.5rem
+
+	}
+	}
+
+.package__title{
+		font-size: .8rem;
+		display: inline-block;
+		width: 100%;
+		height: 4.375rem;
+		text-transform: uppercase;
+		color: #E0E0E0;
+		text-align: center;
+		font-weight: 600;
+		line-height: 4.5rem;
+	}
+
+@media (min-width: 1200px){
+
+.package__title{
+		font-size: 1.06rem
+	}
+	}
+
+.package__price{
+		text-shadow: -2px 2px 1px rgba(150, 150, 150, 1);
+		color: #FFF;
+		font-size: 2.3rem;
+		font-weight: 600;
+		display: inline-block;
+		width: 100%;
+		height: 2.5rem;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 2.3rem;
+
+	}
+
+@media (min-width: 1200px){
+
+.package__price{
+		font-size: 5.2rem;
+		height: 7.18rem;
+		line-height: 6.7rem
+
+	}
+	}
+
+.package__features{
+		color: #E0E0E0;
+		text-align: center;
+		font-weight: 600;
+		line-height: 2rem;
+	}
+
+.package:last-child{
+		margin-right: 0;
+	}
+
+.package__price--green{
+
+			background-color: #91C46B;
+	}
+
+.package__price--blue{
+
+			background-color: #4BCAFF;
+	}
+
+.package__price--orange{
+
+			background-color: #FD7C00;
+	}

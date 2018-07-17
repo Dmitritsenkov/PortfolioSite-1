@@ -13,15 +13,12 @@
 
 		@mixin atSmall{
 			float: left;
-			text-align: center;
 			width: 50%;
 		}
 
 		@mixin atMedium{
 		width: 25%;
-		text-align: center;
 		}
 	}
-
 
 }

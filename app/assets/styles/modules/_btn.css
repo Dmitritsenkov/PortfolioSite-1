@@ -44,4 +44,31 @@
 
 		}
 	}
+
+
+
+		&--purchase{
+		width: 10rem;
+		height: 3rem;
+		color: #FFF;
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		
+	
+}
+
+	&--green{
+		background: #91C46B;
+	}
+
+	&--blue{
+		background-color: #4BCAFF;
+	}
+
+	&--orange{
+		background-color: #FD7C00;
+	}
+
 }

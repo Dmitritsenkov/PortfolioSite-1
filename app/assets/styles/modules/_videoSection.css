@@ -1,0 +1,42 @@
+.videoSection{
+
+		position: relative;
+		background-color: #F2CA8A;
+
+	&__title{
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 1.3rem;
+		font-weight: 100;
+		width: 100%;
+		text-align: center;
+
+		@mixin atMedium{
+		top: 50%;
+		font-size: 2rem;
+		}
+
+	}
+
+	&__description{
+		display: none;	
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		max-width: 46rem;
+		display: none;
+
+		@mixin atMedium{
+			display: block;
+		}
+	}
+
+	&__video1{
+	  height: 550px;
+	  width: 100%;
+	}
+}
