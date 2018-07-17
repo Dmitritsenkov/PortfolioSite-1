@@ -1,17 +1,18 @@
 .packages{
 	display: inline-block;
 	width: 100%;
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 10%;
+	padding-left: 10%;
+	box-sizing: border-box;
 
 	@mixin atMedium{
-	padding-right: 8%;
-	padding-left: 8%;
+	padding-right: 6%;
+	padding-left: 6%;
 	}
 
 	@mixin atLarge{
-	padding-right: 15.5%;
-	padding-left: 15.5%;
+	padding-right: 15%;
+	padding-left: 15%;
 	}
 
 	}
@@ -19,37 +20,41 @@
 .package{
 
 	height: 20rem;
-	width: 90%;
-	border: #DAD7D7 solid 1px;
+	width: 100%;
+	outline: 1px solid rgba(218, 215, 215, 1);
+    outline-offset: -1px; 
 	background: #F9F9F9;
 	margin-bottom: 1.3rem;
 
 	@mixin atMedium{
 	margin-bottom: 0;
 	height: 20rem;
-	width: 25%;
-	margin-right: 2%;
+	width: 30%;
+	margin-right: 2.5%;
 	float: left;
 
 	}
 
 	@mixin atLarge{
-		width: 20%;
-		height: 23.5rem;
+		width: 30%;
+		height: 24rem;
 	}
 
+
+
+
 	&--larger{
-		height: 20rem;
-		width: 90%;
+		height: 21rem;
+		width: 100%;
 
 		@mixin atMedium{
 		height: 23rem;
-		width: 30%;
+		width: 35%;
 		}
 
 	@mixin atLarge{
-		width: 25%;
-		height: 25.5rem;
+		width: 35%;
+		height: 26rem;
 	}
 
 	}
@@ -102,6 +107,24 @@
 
 	.package:last-child{
 		margin-right: 0;
+
+		@mixin atMedium{
+			margin-top: 1.5rem;
+		}
+
+		@mixin atLarge{
+			margin-top: 1rem;
+		}
+	}
+	.package:first-child{
+
+		@mixin atMedium{
+			margin-top: 1.5rem;
+		}
+
+		@mixin atLarge{
+			margin-top: 1rem;
+		}
 	}
 
 

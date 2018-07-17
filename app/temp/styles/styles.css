@@ -850,16 +850,17 @@ img{
 .packages{
 	display: inline-block;
 	width: 100%;
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 10%;
+	padding-left: 10%;
+	box-sizing: border-box;
 
 	}
 
 @media (min-width: 800px){
 
 .packages{
-	padding-right: 8%;
-	padding-left: 8%
+	padding-right: 6%;
+	padding-left: 6%
 
 	}
 	}
@@ -867,8 +868,8 @@ img{
 @media (min-width: 1200px){
 
 .packages{
-	padding-right: 15.5%;
-	padding-left: 15.5%
+	padding-right: 15%;
+	padding-left: 15%
 
 	}
 	}
@@ -876,8 +877,9 @@ img{
 .package{
 
 	height: 20rem;
-	width: 90%;
-	border: #DAD7D7 solid 1px;
+	width: 100%;
+	outline: 1px solid rgba(218, 215, 215, 1);
+    outline-offset: -1px; 
 	background: #F9F9F9;
 	margin-bottom: 1.3rem;
 
@@ -888,8 +890,8 @@ img{
 .package{
 	margin-bottom: 0;
 	height: 20rem;
-	width: 25%;
-	margin-right: 2%;
+	width: 30%;
+	margin-right: 2.5%;
 	float: left
 
 	}
@@ -898,15 +900,15 @@ img{
 @media (min-width: 1200px){
 
 .package{
-		width: 20%;
-		height: 23.5rem
+		width: 30%;
+		height: 24rem
 
 	}
 	}
 
 .package--larger{
-		height: 20rem;
-		width: 90%;
+		height: 21rem;
+		width: 100%;
 
 	}
 
@@ -914,7 +916,7 @@ img{
 
 .package--larger{
 		height: 23rem;
-		width: 30%
+		width: 35%
 
 	}
 	}
@@ -922,8 +924,8 @@ img{
 @media (min-width: 1200px){
 
 .package--larger{
-		width: 25%;
-		height: 25.5rem
+		width: 35%;
+		height: 26rem
 
 	}
 	}
@@ -980,6 +982,34 @@ img{
 
 .package:last-child{
 		margin-right: 0;
+	}
+
+@media (min-width: 800px){
+
+.package:last-child{
+			margin-top: 1.5rem
+	}
+	}
+
+@media (min-width: 1200px){
+
+.package:last-child{
+			margin-top: 1rem
+	}
+	}
+
+@media (min-width: 800px){
+
+.package:first-child{
+			margin-top: 1.5rem
+	}
+	}
+
+@media (min-width: 1200px){
+
+.package:first-child{
+			margin-top: 1rem
+	}
 	}
 
 .package__price--green{
