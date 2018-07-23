@@ -5,7 +5,6 @@
 @import "modules/_shapes";
 @import "modules/_large-hero";
 @import "modules/_btn";
-@import "modules/_wrapper";
 @import "modules/_icons";
 @import "modules/_section-title";
 @import "modules/_section-description";
@@ -13,4 +12,10 @@
 @import "modules/_summarise";
 @import "modules/_gallery";
 @import "modules/_videoSection";
-@import "modules/_price.css";
+@import "modules/_price";
+@import "modules/_testimonials";
+@import "modules/_doYouLikeThisApp";
+@import "modules/_contact";
+@import "modules/_footer";
+@import "modules/_site-header";
+@import "modules/_primary-nav";

@@ -1,0 +1,38 @@
+.footer{
+	background: #414042;
+	height: 7.5rem;
+	text-align: center;
+
+	&__textBlock{
+
+		padding-top: 2.7rem;
+
+		@mixin atLarge{
+		padding-top: 3.6rem;
+	}
+
+	}
+
+	&__copyright{
+		display: block;
+		
+
+		@mixin atLarge{
+			display: inline-block;
+			margin-left: 9.6rem;
+			float: left;
+		}
+
+	}
+
+	&__privacy{
+		display: block;
+		
+
+		@mixin atLarge{
+			display: inline-block;
+			margin-right: 9.6rem;
+			float: right;
+		}
+	}
+}

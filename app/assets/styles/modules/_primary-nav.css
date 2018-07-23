@@ -1,0 +1,54 @@
+.primary-nav{
+	
+	display: none; /* inline-block */
+	margin-top: 4.6rem;
+	width: 100%;
+
+	@mixin atMedium{
+		width: auto;
+		display: inline-block;
+		margin-top: 1.8rem;
+	}
+	
+	@mixin atLarge{
+		float: right;
+		margin-right: 3rem;
+		margin-top: 1.7rem;
+	}
+
+	&--is-visible{
+		display: inline-block ;
+	}
+	
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	li{
+		
+		list-style: none;
+		padding: 1rem 1rem;
+
+			@mixin atMedium{
+
+			float: left;
+			padding-right: 20px;
+
+			}
+	}
+
+	li:hover{
+
+	background: #6394C9;
+
+	}
+
+	a{
+		color: #FFF;
+		text-decoration: none;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+}

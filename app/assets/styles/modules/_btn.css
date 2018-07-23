@@ -45,8 +45,6 @@
 		}
 	}
 
-
-
 		&--purchase{
 		width: 10rem;
 		height: 3rem;
@@ -55,9 +53,29 @@
 		font-weight: 900;
 		margin-left: 50%;
 		transform: translateX(-50%);
-		
-	
-}
+		}
+
+		&--downloadNow{
+			background: $mainBlue;
+			text-transform: none;
+			color: #414042;
+			box-shadow: 0 4px 0 rgba(39,118,151);
+			padding: .5rem 1.5rem;
+			font-size: 1rem;
+
+			@mixin atMedium{
+			padding: 1rem 2rem;
+			}
+		}
+
+		&--submit{
+			text-transform: none;
+			background: #414042;
+			color: $mainBlue;
+			padding: 1rem 5.5rem;
+			border: none;
+			box-shadow: 0 4px 0 rgba(49,48,50);
+		}
 
 	&--green{
 		background: #91C46B;

@@ -10,9 +10,24 @@
 </head>
 <body>
 	<header class="site-header">
+		<img src="assets/images/logo.png">
+		<nav class="primary-nav">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#video">Video</a></li>
+				<li><a href="#prices">Prices</a></li>
+				<li><a href="#testimonails">Testimonails</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>	
+		</nav>
 	</header>
 
 	<div class="large-hero">
+	<div class="large-hero__menu-icon">
+		<div class="large-hero__menu-icon__middle"></div>
+	</div>
 			<picture>
 				<source srcset = "assets/images/hero-bg--large.jpg" media="(min-width: 1200px)">
 				<source srcset = "assets/images/hero-bg--medium.jpg" media="(min-width: 800px)">
@@ -22,7 +37,7 @@
 			<img class = "large-hero__arm" src="assets/images/arm.png" >
 
 		<div class="large-hero__text-content">
-			<!-- <div class="wrapper"> -->
+
 					<h1 class="large-hero__title">Simple Beautiful And Amazing</h1>
 					<p class="large-hero__description">Loorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nisi fringilla lacinia. Nullam pulvinar sollicitudin velit id laoreet. Quisque non rhoncus sem.</p>
 					<a href="#" class="btn btn--download">Download</a>
@@ -30,7 +45,6 @@
 					<span class="large-hero__avaliable">Avaliable on:</span>
 					<a href="#" class="icon"><img src="assets/images/apple.png" class = "icon--apple"></a>
 					<a href="#" class="icon"><img src="assets/images/android.png" class="icon--android"></a>		
-			<!-- </div>	 -->
 		</div>	
 	</div>
 
@@ -140,5 +154,46 @@
 	</div>
 
 
+
+	<div class="testimonials clearfix">
+		<h2 class="section-title">Testimonials</h2>
+
+		<div class="testimonials__blocks clearfix">
+			<div class="testimonials__block clearfix">
+				<img class = "testimonials__icon" src="assets/images/testimonials__icon1.png">
+				<p class="testimonials__block-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Praesent lobortis lectus eget libero blandit venenatis. 
+In blandit tortor vel congue malesuada. Suspendisse 
+molestie lobortis lorem dignissim pretium.<br><br><span class="author">John Doe</span><br><span class = "company">from some company</span></p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="doYouLikeThisApp">
+		<h1 class="doYouLikeThisApp__title">Do you Like this app?</h1>
+		<a href="#" class="btn btn--downloadNow">Download Now</a>
+	</div>
+
+	<div class="contact">
+		<div class="contact__form">
+			<form action="#">
+				<label class="contact__title" >Contact</label>
+				<input type="text" id="name" name="name" placeholder="Your name">
+				<input type="email" id = "email" name="email" placeholder="Your email">
+				<input type="text" id="subject" name="subject" placeholder="Subject">
+				<textarea id="message" name="message" placeholder="Message"></textarea>
+				<input class="btn btn--submit" type="submit" value="Send">
+			</form>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer__textBlock clearfix">
+			<span class="footer__copyright">Copyright © 2013 | bazinger | All Rights Reserved</span>
+			<span class="footer__privacy">Terms of Service | Privacy Policy</span>
+		</div>
+	</footer>
+
+  <script src="/temp/scripts/App.js"></script>
 </body>
 </html>

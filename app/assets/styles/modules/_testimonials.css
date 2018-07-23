@@ -1,0 +1,53 @@
+.testimonials{
+
+	background: #F9F9F9;
+	border: #E7E7E7 solid 1px;
+	margin-top: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	&__blocks{
+		text-align: center;
+	}
+
+	&__block{
+		display: inline-block;
+		
+	}
+
+	&__icon{
+	margin: auto;
+	width: 90px;
+
+	@mixin atMedium{
+		width: auto;
+		float: left;
+		margin-right: 2rem;
+	}
+
+}
+
+&__block-description{
+	margin: auto;
+	padding-top: 1rem;
+	color: $mainBlue;
+	width: 90%;
+	text-align: left;
+
+	@mixin atMedium{
+		margin: auto;
+		padding-top: 2.3rem;
+		width: 30rem;
+		float: left;
+		}
+}
+}
+
+.author{
+	float: right;
+
+}
+.company{
+	float: right;
+
+}

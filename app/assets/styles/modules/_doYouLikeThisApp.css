@@ -1,0 +1,19 @@
+.doYouLikeThisApp{
+	background: #414042;
+	text-align: center;
+	height: 10rem;
+
+	&__title{
+		margin-top: 0;
+		padding-top: 1.3rem;
+		color: #FFF;
+		font-size: 1.5rem;
+		padding-bottom: 1rem;
+
+		@mixin atMedium{
+			font-size: 2rem;
+			padding-bottom: 0;
+		}
+
+	}
+}
